@@ -345,8 +345,8 @@
                 }
             },
             created:function(){
+                console.log('我是更新')
                 this.cartList=JSON.parse(localStorage.getItem("cartData"));
-                console.log(this.cartList);
                 if(this.cartList!=null){
                     this.cartType=true;
                     for(var i=0;i<this.cartList.length;i++){
