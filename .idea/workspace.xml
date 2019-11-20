@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c882e83-95fb-4c10-b611-f064bab5c77b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addcart/cart.html" afterPath="$PROJECT_DIR$/addcart/cart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addcart/detail.html" afterPath="$PROJECT_DIR$/addcart/detail.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,22 +18,29 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addcart/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2442">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="268">
+              <caret line="144" column="6" lean-forward="true" selection-start-line="144" selection-start-column="6" selection-end-line="144" selection-end-column="6" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#4464#6340#0" expanded="false" />
+                <element signature="e#5050#6117#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cart.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addcart/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="347" column="33" lean-forward="false" selection-start-line="347" selection-start-column="33" selection-end-line="347" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="686">
+              <caret line="287" column="16" lean-forward="false" selection-start-line="287" selection-start-column="16" selection-end-line="287" selection-end-column="16" />
+              <folding>
+                <element signature="e#8557#11237#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,6 +54,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/addcart/cart.html" />
+        <option value="$PROJECT_DIR$/addcart/detail.html" />
       </list>
     </option>
   </component>
@@ -91,20 +100,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hide_foot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hide_foot" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="addcart" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -123,12 +118,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574218366551</updated>
-      <workItem from="1574218367647" duration="35000" />
+      <workItem from="1574218367647" duration="2396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35000" />
+    <option name="totallyTimeSpent" value="2396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -164,19 +159,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addcart/detail.html">
+    <entry file="file://$PROJECT_DIR$/addcart/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2442">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="686">
+          <caret line="287" column="16" lean-forward="false" selection-start-line="287" selection-start-column="16" selection-end-line="287" selection-end-column="16" />
+          <folding>
+            <element signature="e#8557#11237#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addcart/cart.html">
+    <entry file="file://$PROJECT_DIR$/addcart/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="347" column="33" lean-forward="false" selection-start-line="347" selection-start-column="33" selection-end-line="347" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="268">
+          <caret line="144" column="6" lean-forward="true" selection-start-line="144" selection-start-column="6" selection-end-line="144" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#4464#6340#0" expanded="false" />
+            <element signature="e#5050#6117#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

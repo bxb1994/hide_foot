@@ -110,8 +110,8 @@
         }
     </style>
 </head>
-<body>
-<div class="hao-detail">
+<body onload="hide()">
+<div class="hao-detail" v-show="pageShow">
     <div class="hao-back iconfont icon-ico_leftarrow" @click="goback()"></div>
     <div class="detail-cont">
         <div class="detail-banner">
@@ -145,16 +145,17 @@
 </div>
 
 <script src="../assets/js/jquery-1.8.1.min.js"></script>
-
 <script src="../assets/js/vue.min.js"></script>
 <script src="../assets/layer/layer.js"></script>
 </body>
 </html>
 <script>
+    var main
     $(function(){
-        var main=new Vue({
+        main=new Vue({
             el:'.hao-detail',
             data:{
+                pageShow:false,
                 productDetail:{
                     productImageUrl:'../assets/img/ban.png',
                     goodsName:'海蓝之谜',
@@ -194,9 +195,22 @@
 
                     location.href='ordersure.html?type='+this.type;
                 }
+            },
+            created:function(){
+                layer.load(2, {shade: [0.6, '#fff']});
+                setTimeout(function () {
+                    layer.closeAll('loading')
+                },5000)
             }
         })
-        document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() { // 通过下面这个API隐藏底部导航栏
-            WeixinJSBridge.call('hideToolbar');});
+        setTimeout("show()",3000)
     })
+    function hide() {
+        main.$data.pageShow=false
+        layer.load(2, {shade: [0.6, '#fff']});
+    }
+    function show() {
+        main.$data.pageShow=true;
+        layer.closeAll('loading')
+    }
 </script>
