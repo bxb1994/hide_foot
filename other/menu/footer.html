@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../../assets/iconfont/iconfont.css">
+</head>
+<body>
+<div class="footer-nav">
+    <ul>
+        <li v-for="item in footdata" @click="navEvent(item)" :class="{'active':item.isActive}">
+            <div class="navLi">
+                <p class="iconfont" :class="item.icon"></p>
+                <p v-html="item.text"></p>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="../../assets/js/jquery-1.8.1.min.js"></script>
+<script src="../../assets/js/vue.min.js"></script>
+</body>
+</html>
+<script>
+    $(function(){
+        var footer=new Vue({
+            el:'.footer-nav',
+            data:{
+                footdata:[
+                    {
+                        text:'首页',
+                        icon:'icon-home_icon',
+                        url:'index.html'
+                    },
+                    {
+                        text:'分类',
+                        icon:'icon-page_icon',
+                        url:'category.html'
+                    },
+                    {
+                        text:'商家',
+                        icon:'icon-weibiaoti-',
+                        url:''
+                    },
+                    {
+                        text:'我的',
+                        icon:'icon-personal',
+                        url:'my.html'
+                    }
+                ]
+            },
+            methods:{
+                navEvent:function(data){
+//                    this.footdata.forEach(function(obj){
+//                        obj.isActive=false;
+//                    })
+//                    data.isActive=!data.isActive;
+                    location.href=data.url;
+                }
+            }
+        })
+    })
+</script>

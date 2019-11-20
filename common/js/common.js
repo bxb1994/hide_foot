@@ -35,7 +35,7 @@ haoMain=new Vue({
             if(item.text=='扫码'){
                 console.log(111);
             }else{
-                location.href=item.url
+                location.replace(item.url);
             }
         }
     }

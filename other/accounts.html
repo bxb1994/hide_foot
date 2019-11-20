@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结算</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1506348_m5a322ycj9l.css">
+    <style>
+        html,body{
+            width:100%;
+            height:100%;
+        }
+        .hao-title{
+            width:100%;
+            height:50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:relative;
+            font-size:16px;
+            font-weight: bold;
+            padding:0 15px;
+        }
+        .goback{
+            position:absolute;
+            left:0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hao-accounts{
+            width:100%;
+            height: calc(100% - 135px);
+            background:#fff;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        .hao-account_list{
+            padding:0 15px;
+        }
+        .accounts-addres{
+            padding:15px 0;
+            border-bottom:1px solid #e6e6e6;
+        }
+        .addresLeft{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .addresIcon{
+            margin-right:8px;
+        }
+        .addName{
+            margin-bottom:5px;
+        }
+        .addresInfo{
+            flex:1;
+            margin-right:10px;
+        }
+        .wide{
+            font-size:16px;
+            font-weight:bold;
+        }
+        .account-goods{
+            width:100%;
+        }
+        .account-goods ul{
+            width:100%;
+        }
+        .account-goods ul>li{
+            width:100%;
+            padding:10px 5px;
+            border-bottom:1px solid #e6e6e6;
+        }
+        .account-goodsImg{
+            width:90px;
+            height:90px;
+            margin-right:15px;
+        }
+        .account-goodsImg img{
+            width:100%;
+            height:100%;
+        }
+        .account-goodsDetail{
+            flex:1;
+        }
+        .account-goodsDetail p{
+            font-size:15px;
+        }
+        .account-way{
+            width:100%;
+        }
+        .account-way ul{
+            width:100%;
+        }
+        .account-way ul li{
+            width:100%;
+            padding:10px 5px;
+            border-bottom:1px solid #e6e6e6;
+        }
+        .account-way_left h2{
+            font-size:16px;
+        }
+        .account-way_left p{
+            font-size:14px;
+            padding-top:4px;
+        }
+        .account-notice{
+            padding:10px 5px;
+        }
+        .account-notice p{
+            color:#999999;
+            font-size:12px;
+        }
+        .gray-xian{
+            width:100%;
+            height:10px;
+            background:rgba(247,247,247,1);
+        }
+        .account-total{
+            width:100%;
+            padding:15px;
+        }
+        .account-total_left p{
+            font-size:13px;
+        }
+        .account-total_right{
+            font-size:16px;
+            font-weight:bold;
+        }
+        .surePayment{
+            width:100%;
+            padding:20px 15px;
+            position:fixed;
+            bottom:0;
+            left:0;
+            z-index:10;
+            background:#fff;
+        }
+        .sureSub{
+            font-size:16px;
+            width:100%;
+            height:45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:#fff;
+            background:rgba(51,51,51,1);
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+<div class="hao-title">
+    <div class="goback iconfont iconzuojiantou"></div>
+    <span>结算</span>
+</div>
+<div class="hao-accounts">
+    <div class="hao-account_list">
+        <div class="accounts-addres spaceBetween">
+            <div class="addresLeft">
+                <div class="addresIcon iconfont iconweibiaoti-3"></div>
+                <div class="addresInfo">
+                    <div class="addName spaceBetween">
+                        <span class="wide">王大陆</span>
+                        <span>15813338888</span>
+                    </div>
+                    <div class="addresDetail">深圳市龙岗区布吉万科麓城创业园2栋2层深圳市龙岗区布吉万科麓城创业园2栋2层</div>
+                </div>
+            </div>
+            <div class="addresRight iconfont iconyoujiantou"></div>
+        </div>
+        <div class="account-goods">
+            <ul>
+                <li class="spaceLeft">
+                    <div class="account-goodsImg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="account-goodsDetail">
+                        <p class="wide">LAMER海蓝之谜</p>
+                        <p>修护沁润面膜6片装</p>
+                        <div class="spaceBetween">
+                            <span class="wide">¥1200</span>
+                            <p>X1</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="spaceLeft">
+                    <div class="account-goodsImg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="account-goodsDetail">
+                        <p class="wide">LAMER海蓝之谜</p>
+                        <p>修护沁润面膜6片装</p>
+                        <div class="spaceBetween">
+                            <span class="wide">¥1200</span>
+                            <p>X1</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="account-way">
+            <ul>
+                <li class="spaceBetween">
+                    <div class="account-way_left">
+                        <h2>配送方式</h2>
+                        <p>请选择快递配送或者自提</p>
+                    </div>
+                    <div class="account-way_jt iconfont iconyoujiantou"></div>
+                </li>
+                <li class="spaceBetween">
+                    <div class="account-way_left">
+                        <h2>配送方式</h2>
+                        <p>请选择快递配送或者自提</p>
+                    </div>
+                    <div class="account-way_jt iconfont iconyoujiantou"></div>
+                </li>
+                <li class="spaceBetween">
+                    <div class="account-way_left">
+                        <h2>配送方式</h2>
+                        <p>请选择快递配送或者自提</p>
+                    </div>
+                    <div class="account-way_jt iconfont iconyoujiantou"></div>
+                </li>
+            </ul>
+            <div class="account-notice">
+                <p>购买前请注意：</p>
+                <p>本平台提供的商品均为验证正品，非质量问题不提供七天无理由 退货，如出现质量问题可以联系客服申请退货退款，谢谢合作。</p>
+            </div>
+        </div>
+    </div>
+    <div class="gray-xian"></div>
+    <div class="account-total spaceBetween">
+        <div class="account-total_left">
+            <p>小计：<span>1</span>样商品</p>
+            <p>运费：满500包邮</p>
+        </div>
+        <div class="account-total_right">
+            合计：¥<span>1200</span>
+        </div>
+    </div>
+</div>
+<div class="surePayment">
+    <div class="sureSub">确认付款</div>
+</div>
+
+</body>
+</html>

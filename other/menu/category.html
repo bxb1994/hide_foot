@@ -5,9 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>购物车</title>
-    <link rel="stylesheet" href="../assets/layer/mobile/need/layer.css">
-    <link rel="stylesheet" href="../common/css/common.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../common/css/common.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1506348_m5a322ycj9l.css">
     <style>
         .cartMask{
@@ -216,30 +215,41 @@
         .category-child-li:nth-child(odd){
             margin-right:4%;
         }
-        .addresul{
+        .category{
             width:100%;
-            padding:20px;
+            padding:15px;
+        }
+        .category-ul{
+            width:100%;
+        }
+        .category-li{
+            width:100%;
+            height:90px;
+            border:1px solid #333;
+            border-radius:5px;
+            margin-bottom:10px;
+        }
+        .category-child{
+            width:100%;
+            display: none;
+        }
+        .category-child-ul{
+            width:100%;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
             flex-wrap: wrap;
         }
-        .addresul .addresLi{
+        .category-child-li{
             width:48%;
-            padding:10px;
+            height:80px;
+            border-radius:5px;
+            margin-bottom:10px;
             border:1px solid #333;
-            margin-bottom: 10px;
         }
-        .senBtn{
-            cursor: pointer;
-            width:50px;
-            height:28px;
-            background: orangered;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color:#fff;
+        .category-child-li:nth-child(odd){
+            margin-right:4%;
         }
+
     </style>
 </head>
 <body>
@@ -302,29 +312,28 @@
         </div>
     </div>
 </div>
-<div class="addresul">
-    <div class="addresLi">
-        <p>我是1</p>
-        <div class="senBtn">发送</div>
-    </div>
-    <div class="addresLi">
-        <p>我是2</p>
-        <div class="senBtn">发送</div>
-    </div>
-    <div class="addresLi">
-        <p>我是3</p>
-        <div class="senBtn">发送</div>
+<div class="footer">
+    <div class="footer-nav">
+        <ul>
+            <li v-for="(item,index) in footdata" @click="navJump(item,index)" :class="{'active':item.isActive}">
+                <div class="navLi">
+                    <p class="iconfont saoma" :class="item.icon" v-if="item.text=='扫码'"></p>
+                    <p v-else class="iconfont" :class="item.icon" ></p>
+                    <p v-html="item.text"></p>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
-
-<script src="../assets/js/jquery-1.8.1.min.js"></script>
-<script src="../assets/js/vue.min.js"></script>
-<script src="../assets/layer/layer.js"></script>
+<script src="../../assets/js/jquery-1.8.1.min.js"></script>
+<script src="../../assets/js/vue.min.js"></script>
+<script src="../../common/js/common.js"></script>
 </body>
 </html>
 <script>
     $(function(){
-        var cartMain=new Vue({
+        $(".footer").find("li").eq(1).addClass("active");
+        var main=new Vue({
             el:'.cartPages',
             data:{
                 categoryGoods:[
@@ -348,10 +357,9 @@
                         {name:'我是商品3'}
                     ];
                     this.childList=content;
-                    console.log(item)
                 },
                 doDetail:function(id){
-                    location.href='detail.html'
+                    location.href='../addcart/detail.html'
                 },
                 addNum:function(obj){
                     obj.num++;
@@ -379,12 +387,12 @@
                 },
                 buyCart:function(){
 //                    localStorage.setItem("orderGoods", JSON.stringify(this.cartList));
-                    location.href='ordersure.html?type='+this.type;
+                    location.href='../addcart/ordersure.html?type='+this.type;
                 }
             },
             created:function(){
-                console.log('我是更新')
                 this.cartList=JSON.parse(localStorage.getItem("cartData"));
+                console.log(this.cartList);
                 if(this.cartList!=null){
                     this.cartType=true;
                     for(var i=0;i<this.cartList.length;i++){
@@ -395,7 +403,9 @@
                     this.cartType=false
                 }
             }
-        })
-    });
-
+        });
+        for(var i=0;i<main.$data.categoryGoods.length;i++){
+            main.$data.categoryGoods[i].type=false;
+        }
+    })
 </script>

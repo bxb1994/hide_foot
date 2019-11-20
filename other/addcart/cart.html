@@ -6,8 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车</title>
-    <link rel="stylesheet" href="../assets/layer/mobile/need/layer.css">
-    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../../assets/layer/mobile/need/layer.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1506348_m5a322ycj9l.css">
     <style>
         .cartMask{
@@ -216,30 +216,6 @@
         .category-child-li:nth-child(odd){
             margin-right:4%;
         }
-        .addresul{
-            width:100%;
-            padding:20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .addresul .addresLi{
-            width:48%;
-            padding:10px;
-            border:1px solid #333;
-            margin-bottom: 10px;
-        }
-        .senBtn{
-            cursor: pointer;
-            width:50px;
-            height:28px;
-            background: orangered;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color:#fff;
-        }
     </style>
 </head>
 <body>
@@ -302,24 +278,10 @@
         </div>
     </div>
 </div>
-<div class="addresul">
-    <div class="addresLi">
-        <p>我是1</p>
-        <div class="senBtn">发送</div>
-    </div>
-    <div class="addresLi">
-        <p>我是2</p>
-        <div class="senBtn">发送</div>
-    </div>
-    <div class="addresLi">
-        <p>我是3</p>
-        <div class="senBtn">发送</div>
-    </div>
-</div>
 
-<script src="../assets/js/jquery-1.8.1.min.js"></script>
-<script src="../assets/js/vue.min.js"></script>
-<script src="../assets/layer/layer.js"></script>
+<script src="../../assets/js/jquery-1.8.1.min.js"></script>
+<script src="../../assets/js/vue.min.js"></script>
+<script src="../../assets/layer/layer.js"></script>
 </body>
 </html>
 <script>
@@ -383,8 +345,8 @@
                 }
             },
             created:function(){
-                console.log('我是更新')
                 this.cartList=JSON.parse(localStorage.getItem("cartData"));
+                console.log(this.cartList);
                 if(this.cartList!=null){
                     this.cartType=true;
                     for(var i=0;i<this.cartList.length;i++){
@@ -396,6 +358,6 @@
                 }
             }
         })
-    });
 
+    })
 </script>

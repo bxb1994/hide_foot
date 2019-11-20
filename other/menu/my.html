@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的</title>
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1506348_m5a322ycj9l.css">
+    <style>
+        html,body{
+            width:100%;
+            height:100%;
+        }
+        .hao-myPages{
+            width:100%;
+            height: calc(100% - 85px);
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        .hao-myHead{
+            width:100%;
+            height:155px;
+            background-image:url('../../assets/img/bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            padding:30px;
+        }
+        .hao-headInfo{
+            width:100%;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .hao-headImg{
+            width:75px;
+            height:75px;
+            border:1px solid #fff;
+            border-radius:50%;
+            margin-right:10px;
+        }
+        .hao-headImg img{
+            width:100%;
+            height:100%;
+            border-radius:50%;
+        }
+        .hao-headName{
+            flex: 1;
+            padding-top:15px;
+        }
+        .hao-headName p{
+            font-size:16px;
+            color:#fff;
+        }
+        .vipGrade span{
+            font-size:14px;
+            color:rgba(230,230,230,1);
+        }
+        .vipGrade{
+            width:100%;
+            height:25px;
+            padding:0 8px;
+            border-radius:20px;
+            margin-top:10px;
+            display: flex;
+            align-items: center;
+            background:rgba(230,230,230,0.2);
+        }
+        .vipGrade span.splitLine{
+            font-size:18px;
+            margin:-3px 10px 0 10px;
+        }
+        .hao-myBody{
+            width:100%;
+            padding:0 15px;
+            margin-bottom:20px;
+        }
+        .inviteCode{
+            width:100%;
+            border-radius:15px;
+            box-shadow:0 2px 8px 1px rgba(89, 89, 89, 0.35);
+            background:#fff;
+            padding:10px 15px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top:-40px;
+        }
+        .inviteCode{
+            font-size:14px;
+        }
+        .inviteLine{
+            width:1px;
+            height:45px;
+            background:#E6E6E6;
+            margin:0 15px;
+        }
+        .copyIcon,.ewmIcon{
+            margin-left:15px;
+            font-size:20px;
+        }
+        .myOftenuse{
+            width:100%;
+            background:#fff;
+            padding:15px;
+            box-shadow:0px 2px 8px 1px rgba(89, 89, 89, 0.35);
+            border-radius:15px;
+            margin-top:15px;
+        }
+        .myOftenuse h1{
+            font-size:15px;
+        }
+        .oftenUl{
+            width:100%;
+            margin-top:20px;
+        }
+        .oftenUl ul{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .oftenUl ul li{
+            width:25%;
+            text-align: center;
+        }
+        .oftenUl ul li .iconfont{
+            font-size:26px;
+        }
+        .myBalance{
+            width:100%;
+            margin-top:15px;
+            padding:0 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .balanceLeft p{
+            margin-bottom:5px;
+        }
+        .balanceLeft h1{
+            font-size:20px;
+        }
+        .balanceRight{
+            text-align: center;
+        }
+        .rechargeIcon{
+            font-size:26px;
+        }
+        .otherBusiness,.otherBusiness ul{
+            width:100%;
+        }
+        .otherBusiness ul li{
+            width:100%;
+            padding:15px 0;
+            border-bottom:1px solid #e1e1e1;
+        }
+    </style>
+
+</head>
+<body>
+<div class="hao-myPages">
+    <div class="hao-myHead">
+        <div class="hao-headInfo">
+            <div class="hao-headImg">
+                <img src="../../assets/img/head.png" alt="">
+            </div>
+            <div class="hao-headName">
+                <p>UID(32244):唐超</p>
+                <div class="vipGrade">
+                    <span>VIP:3</span>
+                    <span class="splitLine">|</span>
+                    <span>推荐人：ABC124</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hao-myBody">
+        <div class="inviteCode">
+            <div>邀请码：<span>QYIEMY66</span><span class="copyIcon iconfont icon-fuzhi1"></span></div>
+            <div class="inviteLine"></div>
+            <div>邀请二维码：<span class="ewmIcon iconfont icon-qrcode"></span></div>
+        </div>
+        <div class="myOftenuse">
+            <h1>我的常用</h1>
+            <div class="oftenUl">
+                <ul>
+                    <li>
+                        <p class="iconfont icon-dingdan"></p>
+                        <p>我的订单</p>
+                    </li>
+                    <li>
+                        <p class="iconfont icon-liushui"></p>
+                        <p>钱包流水</p>
+                    </li>
+                    <li>
+                        <p class="iconfont icon-shequ"></p>
+                        <p>我的团队</p>
+                    </li>
+                    <li>
+                        <p class="iconfont icon-icon-test"></p>
+                        <p>绑定手机</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="myOftenuse">
+            <h1>我的钱包</h1>
+            <div class="myBalance">
+                <div class="balanceLeft">
+                    <p>钱包余额</p>
+                    <h1>¥2000</h1>
+                </div>
+                <div class="balanceRight">
+                    <p class="rechargeIcon iconfont icon-chongzhi1"></p>
+                    <p>我要充值</p>
+                </div>
+            </div>
+        </div>
+        <div class="myOftenuse">
+            <h1>其他业务</h1>
+            <div class="otherBusiness">
+                <ul>
+                    <li class="spaceBetween">
+                        <p>
+                            <span class="iconfont icon-xiugaimima"></span>
+                            <span>修改密码</span>
+                        </p>
+                        <span class="iconfont icon-arrow-right"></span>
+                    </li>
+                    <li class="spaceBetween">
+                        <p>
+                            <span class="iconfont icon-paihangbang"></span>
+                            <span>公告中心</span>
+                        </p>
+                        <span class="iconfont icon-arrow-right"></span>
+                    </li>
+                    <li class="spaceBetween">
+                        <p>
+                            <span class="iconfont icon-bangzhu"></span>
+                            <span>帮助中心</span>
+                        </p>
+                        <span class="iconfont icon-arrow-right"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer">
+    <div class="footer-nav">
+        <ul>
+            <li v-for="(item,index) in footdata" @click="navJump(item,index)" :class="{'active':item.isActive}">
+                <div class="navLi">
+                    <p class="iconfont saoma" :class="item.icon" v-if="item.text=='扫码'"></p>
+                    <p v-else class="iconfont" :class="item.icon" ></p>
+                    <p v-html="item.text"></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="../../assets/js/jquery-1.8.1.min.js"></script>
+<script src="../../assets/js/vue.min.js"></script>
+<script src="../../common/js/common.js"></script>
+</body>
+</html>
+<script>
+    $(function(){
+        $(".footer").find("li").eq(4).addClass("active");
+    })
+</script>
